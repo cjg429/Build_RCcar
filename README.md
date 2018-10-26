@@ -6,3 +6,8 @@ How to make RCcar from the very beginning
 
 The initial password of the Jetson TX2 is **nvidia**.
 ## Install ROS
+
+## Erros
+ssh -X
+rviz
+rviz::RenderSystem: error
