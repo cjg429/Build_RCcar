@@ -4,4 +4,4 @@ How to make RCcar from the very beginning
 1. cd NVIDIA-INSTALLER
 2. sudo ./installer.sh
 
-Initial password is **nvidia**.
+The initial password of the Jetson TX2 is **nvidia**.
