@@ -17,12 +17,21 @@ The initial password of the Jetson TX2 is **nvidia**.
   sudo apt-get install ros-kinetic-urg-node
   ```
 2. Run Hokuyo node
-  * USB port Hokuyo
+  * USB port Hokuyo(Default USB port: /dev/ttyACM0)
     ```
     rosrun urg_node urg_node _serial_port:=<Hokuyo USB Port>
     ```
-    Default port will be /dev/ttyACM0
   * Ethernet port Hokuyo
+  1. Find **Network** on your toolbar and click **Edit Connections**
+  2. Click **Add** and select **Ethernet**
+  3. Click **IPv4 Settings** and click **Add** and set the new address like below.
+  ```
+  IP Address      192.168.1.15
+  Subnet Mask     255.255.255.0
+  Default Gateway 192.168.1.1
+  ```
+  
+  
 ##
 
 
