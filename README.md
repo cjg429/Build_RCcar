@@ -44,28 +44,33 @@ You need to Install Arduino and Teensyduino to compile the Teensy board.
 1. Install Arduino for Linux 64bit at https://www.arduino.cc/en/Main/Donate on your notebook
 2. ```./install.sh```
 3. Install Teensyduino at https://www.pjrc.com/teensy/td_download.html
-3. ```chmod +x TeensyduinoInstall.linux64```
-4. ```./TeensyduinoInstall.linux64``` 
+4. ```chmod +x TeensyduinoInstall.linux64```
+5. ```./TeensyduinoInstall.linux64``` 
  
    During the installation, you need to set your Teensyduino path at your extracted Arduino folder.
-5. ```sudo apt-get install ros-kinetic-rosserial-arduino```
-6. ```rosrun rosserial_arduino make_libraries.py <your Arduino path/libraries>```
-7. 
+6. ```sudo apt-get install ros-kinetic-rosserial-arduino```
+7. ```rosrun rosserial_arduino make_libraries.py <your Arduino path/libraries>```
+8. 
 ```
 sudo rm -f /tmp/49-teensy.rules /etc/udev/rules.d/49-teensy.rules &&
 wget -O /tmp/49-teensy.rules https://www.pjrc.com/teensy/49-teensy.rules &&
 sudo install -o root -g root -m 0664 /tmp/49-teensy.rules /lib/udev/rules.d/49-teensy.rules &&
 sudo service udev reload && echo "Success."
 ```
-8. ```sudo cp /tmp/49-teensy.rules /etc/udev/rules.d/49-teensy.rules```
-9. Restart Arduino and reconnect your Teensy to the notebook
-10. Compile and upload ~ on your Teensy
+9. ```sudo cp /tmp/49-teensy.rules /etc/udev/rules.d/49-teensy.rules```
+10. Restart Arduino and reconnect your Teensy to the notebook
+11. Compile and upload ~ on your Teensy
 
 ## How to use Teensy 
 1. ```sudo apt-get install ros-kinetic-rosserial```
 2. Install race ROS package at https://github.com/mlab-upenn/f1tenthpublic in your catkin workspace and make
 3. ```rosrun rosserial_python serial_node.py <Teensy_USB_port>```
 
+## Install RealSense Libary
+You need to install RealSense library and realsense2_camera ROS package.
+1. https://github.com/IntelRealSense/librealsense/blob/master/doc/installation.md
+2. Install realsesne2_camera ROS package at https://github.com/intel-ros/realsense in your catkin_workspace
+3. ```roslaunch realsense2_camera rgbd.launch'''
 ## Erros
 ssh -X
 rviz
