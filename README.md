@@ -8,6 +8,13 @@ The initial password of the Jetson TX2 is **nvidia**.
 
 ## Download and install JetPack L4T
 https://docs.nvidia.com/jetpack-l4t/2_2/content/developertools/mobile/jetpack/l4t/2.2/jetpack_l4t_install.htm
+1. Download run file at https://developer.nvidia.com/embedded/jetpack on your host computer, not the Jetson board
+2. ```chmod +x JetPack-${VERSION}.run```
+3. ```./JetPack-${VERSION}.run```
+4. Network Layout - Device accesses Internet via router/switch
+5. Select the host nework by ```ifconfig```
+6. USB Recovery Mode: When the Jetson board is powered off, press and hold REC button and then press PWR button
+7. Your Jetson board will be powered on. Then connect to the same network to the host.
 
 ## Install ROS
 1. Download sh files at https://github.com/jetsonhacks/installROSTX2
