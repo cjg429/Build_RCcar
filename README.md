@@ -39,11 +39,15 @@ The initial password of the Jetson TX2 is **nvidia**.
   4. Connect Hokuyo ethernet port to the Jeston board and connect to **Hokuyo** at **Ethernet networks**
   5. ```rosrun urg_node urg_node _ip_address:=192.168.1.1```
   
+## How to compile Teensy
+You need to Install Arduino and Teensyduino to compile the Teensy board.
+1. Install Arduino for Linux at https://www.arduino.cc/en/Main/Donate
+2. ```./install.sh```
+
 ## How to use Teensy 
 1. ```sudo apt-get install ros-kinetic-rosserial```
-2. ```rosrun rosserial_python serial_node.py <Teensy_USB_port>```
-
-## How to compile Teensy
+2. Install race ROS package at https://github.com/mlab-upenn/f1tenthpublic in your catkin workspace and make
+3. ```rosrun rosserial_python serial_node.py <Teensy_USB_port>```
 
 ## Erros
 ssh -X
