@@ -70,7 +70,8 @@ sudo service udev reload && echo "Success."
 You need to install RealSense library and realsense2_camera ROS package.
 1. https://github.com/IntelRealSense/librealsense/blob/master/doc/installation.md
 2. Install realsesne2_camera ROS package at https://github.com/intel-ros/realsense in your catkin_workspace
-3. ```roslaunch realsense2_camera rgbd.launch'''
+3. ```sudo apt-get install ros-kinetic-rgbd-launch```
+4. ```roslaunch realsense2_camera ls_rgbd.launch```
 ## Erros
 ssh -X
 rviz
