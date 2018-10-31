@@ -13,11 +13,12 @@ The initial password of the Jetson TX2 is **nvidia**.
 
 ## Setting Hokuyo
 1. Install ROS package
-  '''
+  ```
   sudo apt-get install ros-kinetic-urg-node
-  '''
+  ```
 2. Run Hokuyo node
-  *
+    * USB port Hokuyo
+    * Ethernet port Hokuyo
 ##
 
 
