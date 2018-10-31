@@ -26,10 +26,13 @@ The initial password of the Jetson TX2 is **nvidia**.
   2. Click **Add** and select **Ethernet**
   3. Click **IPv4 Settings** and click **Add** and set the new address like below.
   ```
+  Name            Hokuyo   
   IP Address      192.168.1.15
   Subnet Mask     255.255.255.0
   Default Gateway 192.168.1.1
   ```
+  4. Connect Hokuyo ethernet port to the Jeston board and connect to **Hokuyo** Ethernet networks
+  5. ```rosrun urg_node urg_node _ip_address:=192.168.1.1```
   
   
 ##
