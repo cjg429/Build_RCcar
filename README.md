@@ -87,3 +87,6 @@ You need to install RealSense library and realsense2_camera ROS package.
 ssh -X
 rviz
 rviz::RenderSystem: error
+
+Could not initialize OpenGL for RasterGLSurface, reverting to RasterSurface.
+Segmentation fault (core dumped)
