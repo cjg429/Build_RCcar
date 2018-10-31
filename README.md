@@ -11,6 +11,11 @@ The initial password of the Jetson TX2 is **nvidia**.
 2. ```./installROS.sh -p ros-kinetic-desktop-full```
 3. ```./setupCatkinWorkspace.sh ~/catkin_ws```
 
+## Install ACM module to use Teensy and Hokuyo
+1. Download sh file at https://github.com/jetsonhacks/installACMModule
+2. ```sudo ./installCDCACM.sh```
+3. Reboot the Jetson board
+
 ## Setting Hokuyo
 1. Install ROS package
   ```
@@ -24,14 +29,14 @@ The initial password of the Jetson TX2 is **nvidia**.
   * Ethernet port Hokuyo
   1. Find **Network** on your toolbar and click **Edit Connections**
   2. Click **Add** and select **Ethernet**
-  3. Click **IPv4 Settings** and click **Add** and set the new address like below.
+  3. Click **IPv4 Settings** and click **Add** and set the new address like below
   ```
   Name            Hokuyo   
   IP Address      192.168.1.15
   Subnet Mask     255.255.255.0
   Default Gateway 192.168.1.1
   ```
-  4. Connect Hokuyo ethernet port to the Jeston board and connect to **Hokuyo** Ethernet networks
+  4. Connect Hokuyo ethernet port to the Jeston board and connect to **Hokuyo** at **Ethernet networks**
   5. ```rosrun urg_node urg_node _ip_address:=192.168.1.1```
   
   
