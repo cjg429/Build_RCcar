@@ -6,6 +6,9 @@ How to make RCcar from the very beginning
 
 The initial password of the Jetson TX2 is **nvidia**.
 
+## Download and install JetPack L4T
+https://docs.nvidia.com/jetpack-l4t/2_2/content/developertools/mobile/jetpack/l4t/2.2/jetpack_l4t_install.htm
+
 ## Install ROS
 1. Download sh files at https://github.com/jetsonhacks/installROSTX2
 2. ```./installROS.sh -p ros-kinetic-desktop-full```
