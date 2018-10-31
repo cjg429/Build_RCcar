@@ -41,8 +41,13 @@ The initial password of the Jetson TX2 is **nvidia**.
   
 ## How to compile Teensy
 You need to Install Arduino and Teensyduino to compile the Teensy board.
-1. Install Arduino for Linux at https://www.arduino.cc/en/Main/Donate
+1. Install Arduino for Linux 64bit at https://www.arduino.cc/en/Main/Donate on your notebook
 2. ```./install.sh```
+3. Install Teensyduino at https://www.arduino.cc/en/Main/Donate
+3. ```chmod +x TeensyduinoInstall.linux64```
+4. ```./TeensyduinoInstall.linux64``` 
+  During the installation, you need to set your Teensyduino path at your extracted Arduino folder 
+
 
 ## How to use Teensy 
 1. ```sudo apt-get install ros-kinetic-rosserial```
