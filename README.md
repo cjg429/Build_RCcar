@@ -87,7 +87,7 @@ You need to install RealSense library and realsense2_camera ROS package.
 On your Jetson board
 1. Find **Network** on your toolbar and click **Edit Connections**
 2. Click **Add** and select **Wi-Fi**
-3. Click **Wi-Fi** and set the connection name and SSID
+3. Click **Wi-Fi** and set the **Connection name** and **SSID**
 ```
 Connection name      Hotspot_name  
 SSID                 Hotspot_name
@@ -97,6 +97,12 @@ SSID                 Hotspot_name
 options bcmdhd op_mode=2
 ```
 5. Click **Connect to Hidden Wi-Fi Network** and select the hotspot which you made.
+
+After the Jetson board is connected to the hotspot, it cannot connect to any wi-fi network except for the hotspot.
+If you want to connect other wi-fi network, you need to delete the hotspot network and the added line at step 4.
+
+On your s
+
 
 ## Erros
 ssh -X
