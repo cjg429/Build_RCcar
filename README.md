@@ -133,12 +133,6 @@ export ROS_IP=10.42.0.1
 ```
 3. ```source ~/.bashrc```
 
-If you finish network settings, you can run roscore on the Jetson board and it is connected to your notebook.
+Now, you can run roscore on the Jetson board and it is connected to your notebook.
 
-## Erros
-ssh -X
-rviz
-rviz::RenderSystem: error
-
-Could not initialize OpenGL for RasterGLSurface, reverting to RasterSurface.
-Segmentation fault (core dumped)
+## Errors
