@@ -83,6 +83,18 @@ You need to install RealSense library and realsense2_camera ROS package.
 3. ```sudo apt-get install ros-kinetic-rgbd-launch```
 4. ```roslaunch realsense2_camera rs_rgbd.launch```
 
+## Network Settings
+On your Jetson board
+1. Find **Network** on your toolbar and click **Edit Connections**
+2. Click **Add** and select **Wi-Fi**
+3. Click **Wi-Fi** and set the connection name and SSID
+```
+Connection name      Hotspot_name  
+SSID                 Hotspot_name
+```
+4. Connect Hokuyo ethernet port to the Jeston board and connect to **Hokuyo** at **Ethernet networks**
+
+
 ## Erros
 ssh -X
 rviz
