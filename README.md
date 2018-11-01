@@ -78,10 +78,11 @@ sudo service udev reload && echo "Success."
 
 ## Install RealSense Libary
 You need to install RealSense library and realsense2_camera ROS package.
-1. https://github.com/IntelRealSense/librealsense/blob/master/doc/installation.md
-2. Install realsesne2_camera ROS package at https://github.com/intel-ros/realsense in your catkin_workspace
-3. ```sudo apt-get install ros-kinetic-rgbd-launch```
-4. ```roslaunch realsense2_camera rs_rgbd.launch```
+1. ```chmod +x librealsense.sh```
+2. ```sudo ./librealsense.sh```
+3. Install realsesne2_camera ROS package at https://github.com/intel-ros/realsense in your catkin_workspace
+4. ```sudo apt-get install ros-kinetic-rgbd-launch```
+5. ```roslaunch realsense2_camera rs_rgbd.launch```
 
 ## Network Settings
 ### On your Jetson board
