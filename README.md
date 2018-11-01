@@ -39,7 +39,7 @@ https://docs.nvidia.com/jetpack-l4t/2_2/content/developertools/mobile/jetpack/l4
   * Ethernet port Hokuyo
   1. Find **Network** on your toolbar and click **Edit Connections**
   2. Click **Add** and select **Ethernet**
-  3. Click **IPv4 Settings** and click **Add** and set the new address like below
+  3. Click **IPv4 Settings** and click **Manual** and click **Add** and set the new address like below
   ```
   Name            Hokuyo   
   IP Address      192.168.1.15
@@ -84,7 +84,7 @@ You need to install RealSense library and realsense2_camera ROS package.
 4. ```roslaunch realsense2_camera rs_rgbd.launch```
 
 ## Network Settings
-On your Jetson board
+### On your Jetson board
 1. Find **Network** on your toolbar and click **Edit Connections**
 2. Click **Add** and select **Wi-Fi**
 3. Click **Wi-Fi** and set the **Connection name** and **SSID**
@@ -101,7 +101,38 @@ options bcmdhd op_mode=2
 After the Jetson board is connected to the hotspot, it cannot connect to any wi-fi network except for the hotspot.
 If you want to connect other wi-fi network, you need to delete the hotspot network and the added line at step 4.
 
-On your s
+### On your notebook
+1. Connect to the hotspot of the Jetson board
+2. Click **Edit Connections** and select the hospot and click **Edit**
+3. Click **IPv4 Settings** and click **Manual** and click **Add** and set the new address like below
+```
+IP Address      10.42.0.X(in this example, 64)
+Subnet Mask     255.255.255.0
+Default Gateway 10.42.0.1
+```
+4. Click **save**
+5. Add the following line to /etc/hosts:
+```
+10.42.0.1 Name_of_the_Jetson_board(for example, nvidia)
+```
+6. Add the following lines to ~/.bashrc:
+```
+export ROS_MASTER_URI=http://10.42.0.1:11311
+export ROS_IP=10.42.0.64
+```
+7. ```source ~/.bashrc```
+
+### On your Jetson board
+1. Add the following line to /etc/hosts:
+```
+10.42.0.64 Name_of_the_notebook(for example, rllab)
+```
+2. Add the following lines to ~/.bashrc:
+```
+export ROS_IP=10.42.0.1
+```
+3. ```source ~/.bashrc```
+
 
 
 ## Erros
