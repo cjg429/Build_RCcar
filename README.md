@@ -92,8 +92,11 @@ On your Jetson board
 Connection name      Hotspot_name  
 SSID                 Hotspot_name
 ```
-4. Connect Hokuyo ethernet port to the Jeston board and connect to **Hokuyo** at **Ethernet networks**
-
+4. Add the following line to /etc/modprobe.d/bcmdhd.conf:
+```
+options bcmdhd op_mode=2
+```
+5. Click **Connect to Hidden Wi-Fi Network** and select the hotspot which you made.
 
 ## Erros
 ssh -X
