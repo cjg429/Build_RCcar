@@ -80,9 +80,11 @@ sudo service udev reload && echo "Success."
 You need to install RealSense library and realsense2_camera ROS package.
 1. ```chmod +x librealsense.sh```
 2. ```sudo ./librealsense.sh```
-3. Install realsesne2_camera ROS package at https://github.com/intel-ros/realsense in your catkin_workspace
-4. ```sudo apt-get install ros-kinetic-rgbd-launch```
-5. ```roslaunch realsense2_camera rs_rgbd.launch```
+3. ```cd /usr/local/bin```
+4. ```./realsense_viewer```
+5. Install realsesne2_camera ROS package at https://github.com/intel-ros/realsense in your catkin_workspace
+6. ```sudo apt-get install ros-kinetic-rgbd-launch```
+7. ```roslaunch realsense2_camera rs_rgbd.launch```
 
 ## Network Settings
 ### On your Jetson board
@@ -142,7 +144,8 @@ Now, you can run roscore on the Jetson board and it is connected to your noteboo
 3. ```git clone https://github.com/ros-planning/navigation.git```
 4. ```git clone https://github.com/ccny-ros-pkg/scan_tools.git```
 5. ```cd ~/catkin_ws```
-6. ```catkin_make```
-7. ```source devel/setup.bash```
+6. sudo apt-get install ros-kinetic
+7. ```catkin_make```
+8. ```source devel/setup.bash```
 
 ## Errors
