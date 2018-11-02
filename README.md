@@ -144,7 +144,7 @@ Now, you can run roscore on the Jetson board and it is connected to your noteboo
 3. ```git clone https://github.com/ros-planning/navigation.git```
 4. ```git clone https://github.com/ccny-ros-pkg/scan_tools.git```
 5. ```cd ~/catkin_ws```
-6. sudo apt-get install ros-kinetic
+6. sudo apt-get install libbullet-dev libsdl-dev libsdl-image1.2-dev
 7. ```catkin_make```
 8. ```source devel/setup.bash```
 
