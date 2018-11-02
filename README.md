@@ -133,6 +133,7 @@ export ROS_IP=10.42.0.64
 2. Add the following lines to ~/.bashrc:
 ```
 export ROS_IP=10.42.0.1
+export ROS_MASTER_URI=http://10.42.0.1:11311
 ```
 3. ```source ~/.bashrc```
 
