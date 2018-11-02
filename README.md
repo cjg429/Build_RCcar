@@ -143,5 +143,6 @@ Now, you can run roscore on the Jetson board and it is connected to your noteboo
 4. ```git clone https://github.com/ccny-ros-pkg/scan_tools.git```
 5. ```cd ~/catkin_ws```
 6. ```catkin_make```
+7. ```source devel/setup.bash```
 
 ## Errors
