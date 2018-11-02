@@ -136,4 +136,7 @@ export ROS_IP=10.42.0.1
 
 Now, you can run roscore on the Jetson board and it is connected to your notebook.
 
+## Install ROS packages
+1. ```sudo apt-get install ros-kinetic-hector-slam```
+
 ## Errors
