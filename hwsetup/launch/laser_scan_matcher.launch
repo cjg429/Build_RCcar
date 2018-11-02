@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+
+<launch>
+  <include file="$(find hwsetup)/launch/base.launch" />
+  <arg name="IS_TWISTSTAMPED" default="true" />
+  <arg name="publish_covariance" default="false"/>
+  #### set up data playback from bag #############################
+
+  <param name="/stamped_vel" value="$(arg IS_TWISTSTAMPED)"/>
+
+  #### start the laser scan_matcher ##############################
+
+  <group if="$(arg publish_covariance)">
+    <param name="laser_scan_matcher_node/do_compute_covariance" value="1"/>
+    <param name="laser_scan_matcher_node/publish_pose_with_covariance" value="true"/>
+    <param name="laser_scan_matcher_node/publish_pose_with_covariance_stamped" value="true"/>
+  </group>
+  <node pkg="laser_scan_matcher" type="laser_scan_matcher_node"
+    name="laser_scan_matcher_node" output="screen">  
+    <param name="base_frame" value="base_link" />
+    <param name="fixed_frame" value="odom" />
+    <param name="publish_tf" value="True" />
+    <param name="max_iterations" value="10"/>
+  </node>
+
+</launch>

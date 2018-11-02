@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<launch>
+  <include file="$(find hwsetup)/launch/laser_scan_matcher.launch" />
+
+  #### start the amcl ##############################
+  <include file="$(find hwsetup)/launch/localization.launch" />
+
+</launch>
