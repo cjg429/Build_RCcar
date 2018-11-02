@@ -140,15 +140,8 @@ export ROS_MASTER_URI=http://10.42.0.1:11311
 Now, you can run roscore on the Jetson board and it is connected to your notebook.
 
 ## Install ROS packages
-3. ```sudo apt-get install ros-kinetic-navigation ros-kinetic-scan-tools ros-kinetic-hector-slam
-8. ```source ~/.bashrc```
+1. ```sudo apt-get install ros-kinetic-navigation ros-kinetic-scan-tools ros-kinetic-hector-slam```
+2. Download hwsetup folder in ~/catkin_ws/src
+3. ```catkin_make```
 
 ## Errors
-```git clone https://github.com/tu-darmstadt-ros-pkg/hector_slam.git```
-3. 
-```
-sudo apt-get install ros-kinetic-navigation
-git clone https://github.com/ros-planning/navigation.git
-sudo apt-get install libbullet-dev libsdl-dev libsdl-image1.2-dev
-```
-4. ```git clone https://github.com/ccny-ros-pkg/scan_tools.git```
