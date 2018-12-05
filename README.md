@@ -19,7 +19,7 @@ https://docs.nvidia.com/jetpack-l4t/2_2/content/developertools/mobile/jetpack/l4
 ## Install ROS
 1. Download sh files at https://github.com/jetsonhacks/installROSTX2
 2. ```./installROS.sh -p ros-kinetic-desktop-full```
-3. ```./setupCatkinWorkspace.sh ~./catkin_ws```
+3. ```./setupCatkinWorkspace.sh catkin_ws```
 
 ## Install ACM module to use Teensy and Hokuyo
 1. Download sh file at https://github.com/jetsonhacks/installACMModule
